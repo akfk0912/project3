@@ -6,7 +6,7 @@ function initMap(){
   var sukchon = {lat:37.508190, lng: 127.100421};
   var map = new google.maps.Map(
     document.getElementById('map'), {
-    zoom: 10, center: songpa
+    zoom: 12, center: songpa
     }
   );
 
