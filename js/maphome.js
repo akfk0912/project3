@@ -1,10 +1,44 @@
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
-  // The map, centered at Uluru
+function initMap(){
+  var school = {lat: 37.375140, lng: 126.632782};
+  var home = {lat: 37.3880586, lng: 126.6629434};
+  var songdo = {lat: 37.392605, lng: 126.638687};
+  var ICN = {lat:37.4487281, lng: 126.4500637};
+  var yellowsea = {lat:37.376978, lng:126.579286};
+  var outlet = {lat:37.381483, lng: 126.6549862};
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
+    document.getElementById('map'), {
+    zoom: 12, center: songdo
+    }
+  );
 
+        
+  var marker1 = new google.maps.Marker({
+    position: school,
+    map: map
+  });
+        
+  var marker2 = new google.maps.Marker({
+    position: home,
+    map: map
+  });
+        
+  var marker3 = new google.maps.Marker({
+    position: songdo,
+    map: map
+  });
+  
+  var marker4 = new google.maps.Marker({
+    position: ICN,
+    map: map
+  });
+  
+  var marker5 = new google.maps.Marker({
+    position: yellowsea,
+    map: map
+  });
+  
+  var marker6 = new google.maps.Marker({
+    position: outlet,
+    map: map
+  });
+}
