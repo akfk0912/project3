@@ -1,10 +1,9 @@
 function initMap(){
-  var school = {lat: 37.375140, lng: 126.632782};
-  var home = {lat: 37.3880586, lng: 126.6629434};
-  var songdo = {lat: 37.392605, lng: 126.638687};
-  var ICN = {lat:37.4487281, lng: 126.4500637};
-  var yellowsea = {lat:37.376978, lng:126.579286};
-  var outlet = {lat:37.381483, lng: 126.6549862};
+  var olympicpark = {lat: 37.5203693, lng: 127.1183395};
+  var home = {lat: 37.504447, lng: 127.126129};
+  var songpa = {lat: 37.5047203, lng: 127.0444241};
+  var lottetower= {lat:37.5126125, lng:127.100353};
+  var sukchon = {lat:37.508190, lng: 127.100421};
   var map = new google.maps.Map(
     document.getElementById('map'), {
     zoom: 12, center: songdo
@@ -13,7 +12,7 @@ function initMap(){
 
         
   var marker1 = new google.maps.Marker({
-    position: school,
+    position: olympicpark,
     map: map
   });
         
@@ -23,22 +22,17 @@ function initMap(){
   });
         
   var marker3 = new google.maps.Marker({
-    position: songdo,
+    position: songpa,
     map: map
   });
   
   var marker4 = new google.maps.Marker({
-    position: ICN,
+    position: lottetower,
     map: map
   });
   
   var marker5 = new google.maps.Marker({
-    position: yellowsea,
-    map: map
-  });
-  
-  var marker6 = new google.maps.Marker({
-    position: outlet,
+    position: sukchon,
     map: map
   });
 }
