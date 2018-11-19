@@ -93,6 +93,12 @@ table {
   font-size: 80px;
 }
 
+.vided{
+	float: none;
+	width: 60%;
+	height: 70%;
+}
+
 .title {
   font-family: 'Dosis', sans-serif;
   color: Crimson;
